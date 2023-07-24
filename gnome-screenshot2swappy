@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+tmpfile=$(mktemp -u --suffix=.png)
+gnome-screenshot -a -f $tmpfile
+swappy -f $tmpfile
+last=$(ls -t ~/Pictures/Screenshots/Swappy_* | head -n1)
+[[ ! -z "$last" ]] && nautilus -s $last
+rm $tmpfile
