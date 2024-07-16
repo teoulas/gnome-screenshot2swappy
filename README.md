@@ -2,6 +2,8 @@
 
 A script to assign to a keyboard shortcut (e.g. super+shift+s like Windows), which uses gnome-screenshot to select an area, then passes it to [swappy](https://github.com/jtheoof/swappy) for annotations and then opens nautilus with the file preselected (if you save it to disk).
 
+![Demo screencast](img/demo-screencast.gif)
+
 # How
 
 A bash and go script as glue between the apps.
