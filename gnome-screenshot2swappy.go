@@ -3,7 +3,6 @@
 package main
 
 import (
-	"io/ioutil"
 	"math/rand"
 	"os"
 	"os/exec"
@@ -55,7 +54,7 @@ func getLastSwappy() (string, error) {
 		return "", err
 	}
 	base := home + "/Pictures/Screenshots"
-	infos, err := ioutil.ReadDir(base)
+	infos, err := os.ReadDir(base)
 	if err != nil {
 		return "", err
 	}
